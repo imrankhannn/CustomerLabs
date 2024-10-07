@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;box-sizing: border-box;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 50px;
+  height: 100vh;
+}
+
+button {
+  background-color: #06a077;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.header{
+  height: 50px;
+  background-color: #06a077;
+}
+.footer{
+  height: 50px;
+  margin-top: 172px;
+  background-color: #ddd;
+}
+
+button:hover {
+  background-color: #00b98e;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 33vw;
+  background-color: white;
+  box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.popup-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.popup h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[type="text"]:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.close-icon {
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.blue-box {
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blue-box select {
+  background-color: white;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.blue-box select:focus {
+  border-color: #ddd;
+}
+
+.popup-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
